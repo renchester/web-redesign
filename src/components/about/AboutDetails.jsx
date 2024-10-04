@@ -17,7 +17,7 @@ function AboutDetails() {
   };
 
   return (
-    <div className="mr-4 mt-2 h-[400px] rounded-lg p-3 shadow-sm lg:w-4/5">
+    <div className="mr-4 mt-2 h-[400px] rounded-lg p-3 lg:w-4/5">
       {aboutDetails.map((detail, index) => (
         <button type="button" className="hidden" onClick={() => setActiveIndex(index)} key={detail.title}>
           <span>{detail.title}</span>

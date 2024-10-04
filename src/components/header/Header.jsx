@@ -39,7 +39,7 @@ function Header({ isIntersecting }) {
   return (
     <div
       ref={navRef}
-      className={`fixed top-0 z-20 flex w-full items-center justify-between px-5 sm:px-10 ${isIntersecting ? 'h-[100px] bg-transparent' : 'h-[100px] border-b border-solid border-slate-400 bg-zinc-50'} transition-colors duration-200`}
+      className={`fixed top-0 z-20 flex w-full items-center justify-between px-5 sm:px-10 ${isIntersecting ? 'h-[100px] bg-transparent' : 'h-[100px] bg-zinc-50 shadow-sm'} transition-colors duration-200`}
     >
       <a onClick={hideNav} href="#hero">
         <Icon isIntersecting={isIntersecting} />
