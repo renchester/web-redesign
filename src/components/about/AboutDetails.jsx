@@ -17,7 +17,7 @@ function AboutDetails() {
   };
 
   return (
-    <div className="mr-4 mt-2 h-[400px] rounded-lg p-3 shadow-sm sm:w-4/5">
+    <div className="mr-4 mt-2 h-[400px] rounded-lg p-3 shadow-sm lg:w-4/5">
       {aboutDetails.map((detail, index) => (
         <button type="button" className="hidden" onClick={() => setActiveIndex(index)} key={detail.title}>
           <span>{detail.title}</span>
@@ -51,7 +51,7 @@ function AboutDetails() {
             </button>
           </div>
         </div>
-        <div className={`$ transition-transform duration-500`}>
+        <div>
           <h4 className="font-onest mb-4 text-xl font-semibold text-orange-500">{aboutDetails[activeIndex].title}</h4>
           {aboutDetails[activeIndex].description.split('\n').map((p) => (
             <p key={p} className="mb-2 text-sm font-light text-gray-600">
@@ -60,8 +60,6 @@ function AboutDetails() {
           ))}
         </div>
       </div>
-
-      {}
     </div>
   );
 }

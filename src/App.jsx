@@ -37,15 +37,17 @@ function App() {
   }, []);
 
   return (
-    <div className="relative flex snap-y snap-mandatory flex-col items-center justify-center overflow-y-scroll bg-sky-100 text-center">
+    <div className="relative flex snap-y snap-mandatory flex-col items-center justify-center overflow-y-scroll bg-zinc-50 text-center">
       <Header isIntersecting={isIntersecting} />
       <Hero ref={targetRef} />
       <About />
       <Socials />
       <Clients />
       <CallToAction />
-      <ContactForm />
-      <Footer />
+      <div className="w-full bg-gradient-to-br from-blue-900 to-sky-600">
+        <ContactForm />
+        <Footer />
+      </div>
     </div>
   );
 }
