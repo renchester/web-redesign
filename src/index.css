@@ -70,18 +70,24 @@ a,
 a:link,
 a:visited {
   text-decoration: none;
-  color: inherit;
 }
 
 p {
   line-height: 1.35;
 }
 
-.material-symbols-outlined {
-  font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 48;
-  font-display: block !important;
+.clip-polygon {
+  clip-path: polygon(0 0, 100% 0, 100% 58%, 0 38%);
+}
+
+.clip-socials {
+  clip-path: polygon(0 0, 100% 7%, 100% 93%, 0 100%);
+}
+
+.clip-cta {
+  clip-path: polygon(0 6%, 100% 0, 100% 100%, 0 100%);
+}
+
+.clip-nav {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 8% 100%);
 }
