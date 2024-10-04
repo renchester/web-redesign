@@ -1,6 +1,6 @@
 function Icon({ isIntersecting }) {
   return (
-    <div className="h-10 w-[220px]">
+    <div className="h-10 origin-left scale-75 sm:scale-100">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 591.78 137.48" className="block w-[220px]">
         <g id="Layer_2" data-name="Layer 2">
           <g id="Layer_1-2" data-name="Layer 1">
