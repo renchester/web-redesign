@@ -1,15 +1,17 @@
-function Hero() {
-  return (
-    // bg-gradient-to-r from-cyan-500 to-blue-500"
-    // bg-[url('/backgrounds/hero.png')]
+import { forwardRef } from 'react';
 
-    <div id="hero" className="grid h-dvh w-full place-content-center bg-gradient-to-br from-sky-700 to-sky-400">
+const Hero = forwardRef(function Hero(props, ref) {
+  return (
+    <section
+      id="hero"
+      className="relative grid h-dvh w-full snap-start place-content-center bg-gradient-to-br from-sky-700 to-sky-400"
+    >
       <div className="relative flex flex-col items-center md:flex-row-reverse">
         <div className="animate-bob">
           <img src="/objects/lightbulb-2.png" alt="Lightbulb" />
         </div>
 
-        <h1 className="flex flex-col text-left font-semibold text-white">
+        <h1 className="flex flex-col text-left font-semibold text-white" ref={ref}>
           <span className="font-inter text-2xl font-semibold">A</span>
           <span className="font-onest text-7xl first-letter:text-orange-500"> Creative</span>
           <span className="font-onest text-7xl first-letter:text-orange-500">Technology</span>
@@ -33,8 +35,8 @@ function Hero() {
           </svg>
         </a>
       </div>
-    </div>
+    </section>
   );
-}
+});
 
 export default Hero;
